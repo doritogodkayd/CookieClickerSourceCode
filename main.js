@@ -1389,7 +1389,7 @@ Game.Launch=function()
 		Game.GetBakeryName=function() {return Game.RandomBakeryName();}
 		Game.bakeryName=Game.GetBakeryName();
 		Game.bakeryNameL=l('bakeryName');
-		Game.bakeryNameL.innerHTML=Game.bakeryName+'\'s bakery';
+		Game.bakeryNameL.innerHTML=Game.bakeryName+'\'s kfc';
 		Game.bakeryNameSet=function(what)
 		{
 			Game.bakeryName=what.replace(/\W+/g,' ');
@@ -1630,7 +1630,7 @@ Game.Launch=function()
 		
 		Game.externalDataLoaded=false;
 		
-		Game.grandmaNames=['Granny','Gusher','Ethel','Edna','Doris','Maud','Hilda','Gladys','Michelle','Michele','Phyllis','Millicent','Muriel','Myrtle','Mildred','Mavis','Helen','Gloria','Sheila','Betty','Gertrude','Agatha','Beryl','Agnes','Pearl','Precious','Ruby','Vera','Bonnie','Ada','Bunny','Cookie','Darling','Gaga','GamGam','Memaw','Mimsy','Peanut','Nana','Nan','Tootsie','Warty','Stinky','Heinous'];
+		Game.grandmaNames=['Dorito','Gusher','Ethel','Edna','Doris','Maud','Hilda','Gladys','Michelle','Michele','Phyllis','Millicent','Muriel','Myrtle','Mildred','Mavis','Helen','Gloria','Sheila','Betty','Gertrude','Agatha','Beryl','Agnes','Pearl','Precious','Ruby','Vera','Bonnie','Ada','Bunny','Cookie','Darling','Gaga','GamGam','Memaw','Mimsy','Peanut','Nana','Nan','Tootsie','Warty','Stinky','Heinous'];
 		Game.customGrandmaNames=[];
 		Game.heralds=0;
 		
@@ -1811,12 +1811,12 @@ Game.Launch=function()
 			str+=str2+'|';
 			if (type==3) str+='\n\nMisc game data';
 			str+=
-			(type==3?'\n	cookies : ':'')+parseFloat(Game.cookies).toString()+';'+
-			(type==3?'\n	total cookies earned : ':'')+parseFloat(Game.cookiesEarned).toString()+';'+
-			(type==3?'\n	cookie clicks : ':'')+parseInt(Math.floor(Game.cookieClicks))+';'+
-			(type==3?'\n	golden cookie clicks : ':'')+parseInt(Math.floor(Game.goldenClicks))+';'+
-			(type==3?'\n	cookies made by clicking : ':'')+parseFloat(Game.handmadeCookies).toString()+';'+
-			(type==3?'\n	golden cookies missed : ':'')+parseInt(Math.floor(Game.missedGoldenClicks))+';'+
+			(type==3?'\n	chickens : ':'')+parseFloat(Game.cookies).toString()+';'+
+			(type==3?'\n	total chickens earned : ':'')+parseFloat(Game.cookiesEarned).toString()+';'+
+			(type==3?'\n	chicken clicks : ':'')+parseInt(Math.floor(Game.cookieClicks))+';'+
+			(type==3?'\n	golden chicken clicks : ':'')+parseInt(Math.floor(Game.goldenClicks))+';'+
+			(type==3?'\n	chickens made by clicking : ':'')+parseFloat(Game.handmadeCookies).toString()+';'+
+			(type==3?'\n	golden chickens missed : ':'')+parseInt(Math.floor(Game.missedGoldenClicks))+';'+
 			(type==3?'\n	background type : ':'')+parseInt(Math.floor(Game.bgType))+';'+
 			(type==3?'\n	milk type : ':'')+parseInt(Math.floor(Game.milkType))+';'+
 			(type==3?'\n	cookies from past runs : ':'')+parseFloat(Game.cookiesReset).toString()+';'+
@@ -1826,8 +1826,8 @@ Game.Launch=function()
 			(type==3?'\n	currently researching : ':'')+parseInt(Math.floor(Game.nextResearch))+';'+
 			(type==3?'\n	research time left : ':'')+parseInt(Math.floor(Game.researchT))+';'+
 			(type==3?'\n	ascensions : ':'')+parseInt(Math.floor(Game.resets))+';'+
-			(type==3?'\n	golden cookie clicks (this run) : ':'')+parseInt(Math.floor(Game.goldenClicksLocal))+';'+
-			(type==3?'\n	cookies sucked by wrinklers : ':'')+parseFloat(Game.cookiesSucked).toString()+';'+
+			(type==3?'\n	golden chicken clicks (this run) : ':'')+parseInt(Math.floor(Game.goldenClicksLocal))+';'+
+			(type==3?'\n	chickens sucked by wrinklers : ':'')+parseFloat(Game.cookiesSucked).toString()+';'+
 			(type==3?'\n	wrinkles popped : ':'')+parseInt(Math.floor(Game.wrinklersPopped))+';'+
 			(type==3?'\n	santa level : ':'')+parseInt(Math.floor(Game.santaLevel))+';'+
 			(type==3?'\n	reindeer clicked : ':'')+parseInt(Math.floor(Game.reindeerClicked))+';'+
